@@ -14,28 +14,23 @@
     <a-scene>
 
         <a-assets>
-            <img id="norm-map-1" src="/img/brickwork_normal-map.jpg">
-            <img id="norm-map-2" src="/img/masonry-wall-normal-map.jpg">
+            <img id="L09-img-01" src="/img/L09-img-1024x768.jpg">
+            <img id="L09-img-02" src="/img/L09-img-1024x768-curved.jpg">
+            <img id="L09-img-03" src="/img/L09-img-1024x768-curved-layout-R.jpg">
+            <img id="L09-img-04" src="/img/L09-img-1024x768-curved-layout-C.jpg">
+            <img id="L09-img-05" src="/img/ssxL09-img-1024x768-curved-layout-L.jpg">
         </a-assets>
-        <!-- Light-Blue Box -->
-        <a-box color="#fff"
-               src="/img/brickwork-texture.jpg"
-               nomral-map="#norm-map-1"
-               normal-texture-repeat="1 1"
-               norm-scale="1 -1"
-               roughness="0.5"
-               width="4" height="4" depth="4"
-               position="-2 1.5 -9"
-               scale="-1 1 1">
-        </a-box>
-        <!-- Brown Box -->
-        <a-box color="#fff"
-               src="/img/masonry-wall-texture.jpg"
-               nomral-map="#norm-map-2"
-               width="4" height="4" depth="4"
-               position="2 1.5 -9"
-               scale="-1 1 1">
-        </a-box>
+      
+        <a-image
+            src="#L09-img-01"
+            position="0 0 0s"
+        ></a-image>
+        <a-curvedimage 
+            src="#L09-img-02"
+            theta-length="270"
+            theta-start="90"
+            radius="2"></a-curvedimage>
+      
     </a-scene>
 </body>
 
